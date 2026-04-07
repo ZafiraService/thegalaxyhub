@@ -1,0 +1,56 @@
+/* 1. Definizione Variabili Globali */
+:root {
+  --background: #050505; /* Nero Profondo Galaxy */
+  --foreground: #ffffff;
+  --galaxy-gold: #f59e0b;
+  --galaxy-card: #0f0f0f;
+}
+
+/* 2. Reset Stili Base */
+body {
+  background-color: var(--background) !important;
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* 3. Classi Custom per il Tema Galaxy */
+.bg-galaxy-card {
+  background-color: var(--galaxy-card);
+}
+
+.text-galaxy-gold {
+  color: var(--galaxy-gold);
+}
+
+.border-galaxy {
+  border-color: rgba(245, 158, 11, 0.2);
+}
+
+/* 4. Scrollbar Moderna (Stile Sollary) */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--galaxy-gold);
+}
+
+/* 5. Effetto Selezione Testo */
+::selection {
+  background-color: rgba(245, 158, 11, 0.3);
+  color: white;
+}
